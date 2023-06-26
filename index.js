@@ -5,7 +5,7 @@ import axios from "axios";
 export default defineComponent({
   async run({ steps, $ }) {
     // custom field key of the goals object.
-    const customFieldKey = "07830b8b82772b06f0ff536731de4806f85bbcb8";
+    const customFieldKey = "07830b8b82772b06f0ff536731de4806f85bbcb8" //replace this with the "goal" field key in pipedrive;
     const apiUrl = "https://api.pipedrive.com/v1/persons/search";
     const apiToken = PIPEDRIVE_API_KEY; // Replace with your Pipedrive API token
     const { email, goals } = steps.trigger.event.body; // Replace with the email ID you want to search
